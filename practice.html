@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Full HTML Tags Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        article, aside {
+            padding: 10px;
+            margin: 10px 0;
+            background: white;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, td {
+            border: 1px solid black;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #222;
+            color: white;
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        function showMessage() {
+            alert("Button Clicked!");
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <hr>
+
+    <!-- Article Section -->
+    <article>
+        <h2>Welcome to My Website</h2>
+        <p>This is a <strong>strong</strong> and <em>emphasized</em> paragraph with 
+           <b>bold</b> text and a <span style="color:red;">span element</span>.</p>
+
+        <p>Water formula is H<sub>2</sub>O and 10<sup>2</sup> = 100</p>
+
+        <blockquote>
+            "Learning HTML is the foundation of web development."
+            <cite> - Web Developer</cite>
+        </blockquote>
+
+        <details>
+            <summary>Click to expand</summary>
+            <p>This text is hidden inside details tag.</p>
+        </details>
+    </article>
+
+    <!-- Aside -->
+    <aside>
+        <p>This is an <abbr title="HyperText Markup Language">HTML</abbr> demo website.</p>
+    </aside>
+
+    <!-- Image with Map -->
+    <img src="https://via.placeholder.com/300" usemap="#image-map">
+    <map name="image-map">
+        <area shape="rect" coords="0,0,150,150" href="#" alt="Clickable Area">
+    </map>
+
+    <!-- Figure -->
+    <figure>
+        <img src="https://via.placeholder.com/200">
+        <figcaption>Sample Image Caption</figcaption>
+    </figure>
+
+    <!-- Audio -->
+    <audio controls>
+        <source src="" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <!-- Iframe -->
+    <iframe src="https://example.com" width="300" height="200"></iframe>
+
+    <!-- List -->
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <!-- Form -->
+    <div>
+        <h3>Contact Form</h3>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message"></textarea><br><br>
+
+        <label for="choice">Choose Option:</label>
+        <select id="choice">
+            <option>Option 1</option>
+            <option>Option 2</option>
+        </select><br><br>
+
+        <button onclick="showMessage()">Submit</button>
+    </div>
+
+    <!-- Table -->
+    <table>
+        <caption>Student Table</caption>
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td>Course</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>IT</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- SVG -->
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="blue" />
+    </svg>
+
+    <!-- Address -->
+    <address>
+        Written by John Doe.<br>
+        Visit us at Nairobi, Kenya.
+    </address>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 My Website
+    </footer>
+
+</body>
+</html>
